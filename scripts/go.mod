@@ -1,7 +1,7 @@
 // This module only exists so that our script can invoke tracestat using `go run` instead of having to
 // install the tracestat binary.
 
-module github.com/libp2p/gossipsub-hardening/scripts
+module github.com/FlavScheidt/gossipsub-hardening/scripts
 
 go 1.14
 

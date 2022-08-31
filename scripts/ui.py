@@ -91,10 +91,10 @@ class RunButton(object):
             raise ValueError('test execution failed, skipping analysis. moved outputs to {}'.format(failed_dir))
 
         print('test outputs saved to {}'.format(workdir))
-        print('extracting test data for analysis...')
-        analysis_dir = os.path.join(workdir, 'analysis')
-        analyze.extract_test_outputs(archive_filename, analysis_dir, convert_to_pandas=False, prep_notebook=True)
-        print('saved analysis outputs to {}'.format(analysis_dir))
+        # print('extracting test data for analysis...')
+        # analysis_dir = os.path.join(workdir, 'analysis')
+        # analyze.extract_test_outputs(archive_filename, analysis_dir, convert_to_pandas=False, prep_notebook=True)
+        # print('saved analysis outputs to {}'.format(analysis_dir))
 
 
 
