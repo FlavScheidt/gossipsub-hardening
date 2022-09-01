@@ -73,7 +73,8 @@ class RunButton(object):
                # '--endpoint', endpoint,
                'run', 'composition',
                '-f', comp_filename,
-               '--collect', '-o', archive_filename]
+               '--collect', '-o', archive_filename,
+               '--wait']
 
         p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, universal_newlines=True)
         for line in iter(p.stdout.readline, ''):
