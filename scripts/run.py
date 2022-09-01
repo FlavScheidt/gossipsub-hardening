@@ -185,7 +185,7 @@ def run_composition(comp_filepath, output_dir, k8s=False):
 
     print('running testground composition {}'.format(comp_filepath))
     print("writing test outputs to {}".format(output_dir))
-    cmd = [TESTGROUND_BIN, 'run', 'composition', '-f', comp_filepath, '--collect', '-o', outpath]
+    cmd = [TESTGROUND_BIN, 'run', 'composition', '-f', comp_filepath, '--collect', '-o', outpath, '--wait']
     subprocess.run(cmd, check=True)
 
     print('test completed successfully!')
