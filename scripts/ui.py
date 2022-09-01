@@ -70,7 +70,7 @@ class RunButton(object):
             json.dump(self.config.snapshot(), f)
 
         cmd = [TESTGROUND, '--vv',
-               '--endpoint', endpoint,
+               # '--endpoint', endpoint,
                'run', 'composition',
                '-f', comp_filename,
                '--collect', '-o', archive_filename]
